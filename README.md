@@ -36,25 +36,25 @@ EDA was performed in [`notebook/EDA.ipynb`](./notebook/EDA.ipynb) to understand 
 
 Histograms show that `petal_length` and `petal_width` are **not unimodal** — they display a clear separation, hinting that these two features carry strong class-discriminative information.
 
-![Histogram of features](../data/processed/histogram.png)
+![Histogram of features](./data/processed/histogram.png)
 
 ### 2. Outlier check
 
 Boxplots confirm the dataset is mostly clean, with only a few mild outliers in `sepal_width`.
 
-![Boxplots of features](../data/processed/outliers.png)
+![Boxplots of features](./data/processed/outliers.png)
 
 ### 3. Correlation heatmap
 
 `petal_length` and `petal_width` are **strongly correlated with each other (0.96)** and also strongly correlated with `sepal_length` (0.87 and 0.82 respectively), while `sepal_width` behaves almost independently and is even slightly negatively correlated with the petal features.
 
-![Correlation heatmap](../data/processed/Heatmap.png)
+![Correlation heatmap](./data/processed/Heatmap.png)
 
 ### 4. Pairplot by species
 
 The pairplot is the clearest evidence: when colored by species, **petal_length vs petal_width** produces the most visually separable clusters among the three species, with almost no overlap for *setosa* and only minor overlap between *versicolor* and *virginica*.
 
-![Pairplot by species](../data/processed/pairplot.png)
+![Pairplot by species](./data/processed/pairplot.png)
 
 ### 🔑 Key findings
 
